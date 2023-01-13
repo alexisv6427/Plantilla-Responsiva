@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="C:\Users\alexi\OneDrive\Escritorio\Programación\ENYOI\Challenges\Challenge3\Assets_Challenge3\Style.css">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+  rel="stylesheet"
+/>
+<!-- Favicon -->
+<link href="img/favicon.ico" rel="icon">
+<!-- Icon Font Style -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Libraries Stylesheet -->
+<link href="Assets_Challenge3\css\bootstrap.min.css" rel="stylesheet">
+<link href="Assets_Challenge3\css\style.css" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+    <!-- Header -->
+    <div class="row text-bg-dark">
+          <!-- Menu superior y logo -->
+      <div class="col-xl-12 col-sm-12">
+      <header class="p-3 text-bg-dark">
+        <div class="container">
+          
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+              <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+              <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
+            </svg>
+
+            
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-white">Inicio</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Funciones</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Temas</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Tienda</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Acerca de...</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Buscar..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-dark">Entrar</button>
+              <button type="button" class="btn btn-outline-danger">Registrarse</button>
+            </div>
+          </div>
+              
+
+
+
+
+        </div>
+      </header>
+        </div>
+     
+
+
+
+
+
+            <!-- Boton Contenedor -->
+        <div class="col-sm-auto text-bg-dark posicionD"> 
+          <!-- Boton Canvas -->
+          <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa fa-bars"></i></button>
+          <!-- Canvas -->
+        <div class="offcanvas offcanvas-end text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <!-- Contenido del canvas -->
+
+            <!-- TABLA -->
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4 px-6" style="border: bottom 30px;">Menu</span>
+        </a>
+        <hr>
+        <div class="list-group list-group-light col-xl-12 col-sm-6 " style="min-width: 22rem;padding: 25px;">
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+              <a href="#" class="list-group-item list-group-item-action px-3 border-0 active" aria-current="true">
+                Ventas </a>
+
+          </li>
+          <li>
+            <a href="#" class="list-group-item list-group-item-action px-3 border-0"> Compras </a>
+              
+          </li>
+          <li>
+            <a href="#" class="list-group-item list-group-item-action px-3 border-0"> Inventario </a>
+            
+          </li>
+          <li>
+            <a href="#" class="list-group-item list-group-item-action px-3 border-0"> Clientes </a>
+            
+          </li>
+          <li>
+            <a href="#" class="list-group-item list-group-item-action px-3 border-0"> Anuncios </a>
+          
+            </a>
+          </li>
+         <li>
+          <a href="#" class="list-group-item list-group-item-action px-3 border-0"> Facturación </a>
+         </li> 
+         
+        </ul>
+      </div>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>mdo</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Fin de la tabla -->
+
+     
+
+
+
+            
+
+
+          </div>
+        </div>
+
+      </div>
+        
+
+    </div>
+
+<!-- Body -->
+<div class="row body">
+
+    <div class="col-xl-8 col-xm-12 contenido">
+
+      <div class="col-12 contenidoHijo">
+          <!-- Tarjetas -->
+       
+          <div class="container-fluid pt-4 px-4">
+            <div class="row g-4">
+                <div class="col-sm-6 col-xl-3">
+                    <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                        <i class="fa fa-chart-line fa-3x text-primary"></i>
+                        <div class="ms-3">
+                            <p class="mb-2">Ventas de Hoy</p>
+                            <h6 class="mb-0">$1234</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                        <i class="fa fa-chart-bar fa-3x text-primary"></i>
+                        <div class="ms-3">
+                            <p class="mb-2">Ventas Totales</p>
+                            <h6 class="mb-0">$4598</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                        <i class="fa fa-chart-area fa-3x text-primary"></i>
+                        <div class="ms-3">
+                            <p class="mb-2">Ingreso Bruto</p>
+                            <h6 class="mb-0">$6834</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                        <i class="fa fa-chart-pie fa-3x text-primary"></i>
+                        <div class="ms-3">
+                            <p class="mb-2">Ingreso Neto</p>
+                            <h6 class="mb-0">$5484</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Recent Sales Start -->
+    <div class="container-fluid pt-4 px-4">
+      <div class="bg-secondary text-center rounded p-4">
+          <div class="d-flex align-items-center justify-content-between mb-4">
+              <h6 class="mb-0"> Ultimas Ventas </h6>
+              <a href=""> Mostrar todas </a>
+          </div>
+          <div class="table-responsive">
+              <table class="table text-start align-middle table-bordered table-hover mb-0">
+                  <thead>
+                      <tr class="text-white">
+                          <th scope="col"><input type="checkbox"></th>
+                          <th scope="col">Fecha</th>
+                          <th scope="col">Folio</th>
+                          <th scope="col">Cliente</th>
+                          <th scope="col">Cantidad</th>
+                          <th scope="col">Estado</th>
+                          <th scope="col">Mas</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><input type="checkbox"></td>
+                          <td>01 Ene 2045</td>
+                          <td>Fol-0121</td>
+                          <td>Fulanito Gonzalez</td>
+                          <td>$123</td>
+                          <td>Pagado</td>
+                          <td><a class="btn btn-sm btn-primary" href="">Detalles</a></td>
+                      </tr>
+                      <tr>
+                          <td><input type="checkbox"></td>
+                          <td>01 Ene 2045</td>
+                          <td>Fol-0122</td>
+                          <td>Fulanita Gonzalez</td>
+                          <td>$321</td>
+                          <td>Pagado</td>
+                          <td><a class="btn btn-sm btn-primary" href="">Detalles</a></td>
+                      </tr>
+                      <tr>
+                          <td><input type="checkbox"></td>
+                          <td>01 Ene 2045</td>
+                          <td>Fol-0123</td>
+                          <td>Fulanita Fernandez</td>
+                          <td>$183</td>
+                          <td>Pendiente</td>
+                          <td><a class="btn btn-sm btn-warning" href="">Detalles</a></td>
+                      </tr>
+                      <tr>
+                          <td><input type="checkbox"></td>
+                          <td>01 Ene 2045</td>
+                          <td>Fol-0124</td>
+                          <td>Fulanito Fernandez</td>
+                          <td>$544</td>
+                          <td>Pago parcial</td>
+                          <td><a class="btn btn-sm btn-danger" href="">Detalles</a></td>
+                      </tr>
+                      <tr>
+                          <td><input type="checkbox"></td>
+                          <td>01 Ene 2045</td>
+                          <td>Fol-0125</td>
+                          <td>Pedro Gonzalez</td>
+                          <td>$777</td>
+                          <td>Pendiente</td>
+                          <td><a class="btn btn-sm btn-warning" href="">Detalles</a></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+  <!-- Recent Sales End -->
+
+
+
+
+
+
+      </div>
+
+      
+
+    </div>
+      <!-- Menu lateral derecho -->
+    <div class="col-xl-4 menu">
+
+      <div class="col-xl-12">
+
+        <!-- TABLA -->
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">Menu</span>
+        </a>
+        <hr>
+        <div class="list-group list-group-light col-xl-12 col-sm-6 " style="min-width: 22rem;padding: 25px;">
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+              <a href="#" class="list-group-item list-group-item-action px-3 border-0 active" aria-current="true">
+                Ventas </a>
+
+          </li>
+          <li>
+            <a href="#" class="list-group-item list-group-item-action px-3 border-0"> Compras </a>
+              
+          </li>
+          <li>
+            <a href="#" class="list-group-item list-group-item-action px-3 border-0"> Inventario </a>
+            
+          </li>
+          <li>
+            <a href="#" class="list-group-item list-group-item-action px-3 border-0"> Clientes </a>
+            
+          </li>
+          <li>
+            <a href="#" class="list-group-item list-group-item-action px-3 border-0"> Anuncios </a>
+          
+            </a>
+          </li>
+         <li>
+          <a href="#" class="list-group-item list-group-item-action px-3 border-0"> Facturación </a>
+         </li> 
+         
+        </ul>
+      </div>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>mdo</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+            <li><a class="dropdown-item" href="#">Nuevo proyecto</a></li>
+            <li><a class="dropdown-item" href="#">Ajustes</a></li>
+            <li><a class="dropdown-item" href="#">Perfil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      </div>
+    </div>
+</div>
+
+
+<div class="row">
+
+  <div class="col-12 pie">
+
+    <footer class="bg-dark text-center text-white" style="width:100%;">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+    
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+  </div>
+
+</div>
+
+
+
+
+<!-- Librerias -->
+<script src="Assets_Challenge3\lib\chart\chart.min.js"></script>
+<script scr="Assets_Challenge3\lib\easing\easing.min.js"></script>
+<script scr="Assets_Challenge3\lib\waypoints\waypoints.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Assets_Challenge3\lib\owlcarousel\owl.carousel.min.js"></script>
+<script src="Assets_Challenge3\lib\tempusdominus\js\moment.min.js"></script>
+<script src="Assets_Challenge3\lib\tempusdominus\js\moment-timezone.min.js"></script>
+<script src="Assets_Challenge3\lib\tempusdominus\js\tempusdominus-bootstrap-4.min.js"></script>
+
+
+<script scr="js\main.js"></script>
+
+
+
+
+</body>
+</html>
+
+
+
+

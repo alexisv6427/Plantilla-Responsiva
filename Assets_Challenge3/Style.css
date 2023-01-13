@@ -1,0 +1,26 @@
+
+.body
+{
+    background-color: rgb(56, 49, 49);
+}
+.posicionD
+{
+    position: fixed;
+    left: 80%;
+}
+.posicionDF
+{
+    display: flex;
+    align-items: flex-end;
+}
+
+@media screen and (max-width:1000px) {
+    .menu {
+        display: none;
+    }
+}
+
+.pie
+{
+    background-color: rgba(0, 0, 0, 0.2);
+}
